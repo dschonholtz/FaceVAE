@@ -25,7 +25,7 @@ grid_images = []
 model = model.ConvVAE().to(device)
 # define the learning parameters
 lr = 0.0001
-epochs = 75
+epochs = 200
 batch_size = 64
 optimizer = optim.Adam(model.parameters(), lr=lr)
 criterion = nn.BCELoss(reduction='sum')
@@ -34,7 +34,7 @@ criterion = nn.BCELoss(reduction='sum')
 transform = transform()
 # prepare the training and validation data loaders
 train_data, valid_data = prepare_dataset(
-    root_path='../input/lfw-deepfunneled/lfw-deepfunneled/'
+    root_path='../input/catsNdogs/'
 )
 trainset = LFWDataset(train_data, transform=transform)
 trainloader = DataLoader(trainset, batch_size=batch_size, shuffle=True)

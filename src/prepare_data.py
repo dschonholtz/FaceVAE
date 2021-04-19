@@ -27,7 +27,7 @@ def prepare_dataset(root_path):
     # go through all of the image_dirs
     for i in tqdm(range(len(image_dirs))):
         # get all of the image paths
-        image_paths = glob.glob(f"{root_path}/{image_dirs[i]}/*")
+        image_paths = glob.glob(f"{root_path}/{image_dirs[i]}/cat*")
         # sort them
         image_paths.sort()
         for image_path in image_paths:
