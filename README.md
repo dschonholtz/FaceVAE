@@ -1,13 +1,9 @@
 # A Simple FaceVAE example
 
-This code is from this tutorial.
-The code is not my own.
+This code is largely from the following guide. I have added some comments to make sure I understand what is going on and have mucked with the input a bit.
+I also typed most of it rather than copying/pasting to make sure I knew what was going where.
 
 https://debuggercafe.com/generating-fictional-celebrity-faces-using-convolutional-variational-autoencoder-and-pytorch/
-
-What is my own is the incessant comments. I decided if I was lifting someone elses
-code I could at least make sure to understand it by putting a comment on every line explaining
-what was happening.
 
 ## Where is the data?
 The input folder is intentionally missing
